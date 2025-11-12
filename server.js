@@ -12,7 +12,8 @@ const corsOptions = {
   origin: [
     'http://localhost:3000',
     'https://task-manager-frontend-new.vercel.app',
-    'https://new-task-frontend-6z0kmeg4f-namrata-bhadanes-projects.vercel.app' // ✅ new frontend
+    'https://new-task-frontend-6z0kmeg4f-namrata-bhadanes-projects.vercel.app', // ✅ new frontend
+    'https://task-manager-frontend-upda-git-2bac4d-namrata-bhadanes-projects.vercel.app'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
