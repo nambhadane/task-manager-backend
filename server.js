@@ -11,12 +11,14 @@ const app = express();
 const corsOptions = {
   origin: [
     'http://localhost:3000',
-    'https://task-manager-frontend-new.vercel.app'
+    'https://task-manager-frontend-new.vercel.app',
+    'https://new-task-frontend-6z0kmeg4f-namrata-bhadanes-projects.vercel.app' // ✅ new frontend
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 };
-app.use(cors(corsOptions));   // ✅ Must come before routes
+app.use(cors(corsOptions)); // ✅ must come before routes
+
 
 app.use(express.json());
 
