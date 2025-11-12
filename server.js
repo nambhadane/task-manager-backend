@@ -12,13 +12,16 @@ const corsOptions = {
   origin: [
     'http://localhost:3000',
     'https://task-manager-frontend-new.vercel.app',
-    'https://new-task-frontend-6z0kmeg4f-namrata-bhadanes-projects.vercel.app', // ✅ new frontend
-    'https://task-manager-frontend-upda-git-2bac4d-namrata-bhadanes-projects.vercel.app'
+    'https://new-task-frontend-6z0kmeg4f-namrata-bhadanes-projects.vercel.app',
+    'https://task-manager-frontend-updated.vercel.app', // ✅ final production frontend
+    'https://task-manager-frontend-upda-git-2bac4d-namrata-bhadanes-projects.vercel.app' // optional preview URL
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 };
-app.use(cors(corsOptions)); // ✅ must come before routes
+
+app.use(cors(corsOptions));
+
 
 
 app.use(express.json());
